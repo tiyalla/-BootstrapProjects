@@ -109,6 +109,11 @@ nav{
     background-color: white;
     border-bottom: 2px solid black;
 }
+.navList li a{
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
 
 #img1{
     background-color: blanchedalmond;
@@ -123,7 +128,8 @@ nav{
 }
 
 .col-sm{
-    height: 78vh;
+    height: 70vh;
+    border: 1px solid black;
 }
 
 .wrapper{
