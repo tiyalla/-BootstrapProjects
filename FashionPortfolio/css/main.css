@@ -109,6 +109,10 @@ nav{
     background-color: white;
     border-bottom: 2px solid black;
 }
+.navbar .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+
+}
 .navList li a{
     padding: 8px;
     font-size: 13px;
@@ -117,7 +121,7 @@ nav{
 
 div.col-md{
     height: 70vh;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 .col-md img{
@@ -127,16 +131,6 @@ div.col-md{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-}
-
-#img1{
-    background-image: url(img/red.PNG);
-}
-#img2{
-    background-image: url(img/shirt.PNG);
-}
-#img3{
-    background-image: url(img/Headshot.PNG);
 }
 
 /*.col-sm img{
@@ -251,6 +245,11 @@ h3{
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 500px) {
+    .navbar-toggler-icon{
+        display: none !important;
+    }
+}
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
