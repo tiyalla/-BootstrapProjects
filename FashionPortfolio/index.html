@@ -11,9 +11,9 @@
 
   <link rel="manifest" href="site.webmanifest">
   <!-- Place favicon.ico in the root directory -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut-icon" href="favicon.ico">
@@ -31,13 +31,19 @@
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
-< <nav class="navbar navbar-expand-sm navbar-light light-blue" role="navigation">
+< <nav class="navbar navbar-expand-md navbar-light light-blue">
     <div class="container">
+
             <a class="navbar-brand" href="#">
                 <img src="img/SaintBob.png" width="100" height="40" class="d-inline-block align-top" alt="">
             </a>
 
-        <div class="collapse navbar-collapse" id="collapseElem">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseElem"
+                aria-controls="collapseElem" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="collapseElem">
             <div class="navbar-nav ml-auto p-2">
                 <a class="nav-item nav-link active" href="#">Home</a>
                 <a class="nav-item nav-link" href="#">About Us</a>
@@ -49,10 +55,7 @@
                 <a class="nav-item nav-link" href="#">Follow Us</a>
             </div>
         </div>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapseElem"
-                aria-controls="navbarSupportedContent15" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        </button>
+        
     </div>
 </nav>
   <!--<nav class="navbar navbar-toggleable-sm">
