@@ -144,7 +144,13 @@ button:focus{
 .wrapper{
     background-color: white;
     height: 100vh;
+}
 
+.aboutus-content {
+    background-color: red;
+    text-align: center;
+    padding-top: 10%;
+    width: 100%;
 }
 
 a{
@@ -252,8 +258,11 @@ h3{
 
 @media only screen and (max-width: 500px) {
     /* Style adjustments for viewports that meet the condition */
-    .wrapper{
+    .wrapper {
         height: auto;
+    }
+
+    .about-us {
     }
 }
 
