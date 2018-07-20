@@ -15,10 +15,19 @@ html {
     font-size: 1em;
     line-height: 1.4;
     margin: 0 auto;
+
 }
 
 html, body{
     height: 100%;
+    top: 0;
+    left: 0;
+    min-height: 100%; 
+    min-width: 100%;
+}
+
+body{
+    background-color: black;
 }
 
 /*
@@ -101,34 +110,41 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body{
-    background-color: black;
-}
 
 nav{
     background-color: white;
     border-bottom: 2px solid black;
 }
 
-#img1{
-    background-color: blanchedalmond;
+.navbar .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+button:focus{
+    outline: none;
+}
+.navbar-nav> a:hover{
+    background-color: whitesmoke;
+}
+.navList li a{
+    padding: 8px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
-#img2{
-    background-color: white;
-}
 
-#img3{
-    background-color: lightgray;
-}
-
-.col-sm{
-    height: 78vh;
+.content-img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
 }
 
 .wrapper{
     background-color: white;
-    height: 94vh;
+    height: 100vh;
+
 }
 
 a{
@@ -233,8 +249,12 @@ h3{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+
+@media only screen and (max-width: 500px) {
     /* Style adjustments for viewports that meet the condition */
+    .wrapper{
+        height: auto;
+    }
 }
 
 @media print,
