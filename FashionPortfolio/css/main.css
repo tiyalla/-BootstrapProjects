@@ -131,7 +131,17 @@ button:focus{
     font-weight: bold;
 }
 
+.carousel-item{
+    background-color: red;
+    height: 550px;
+}
 
+.carousel-item img{
+}
+
+.carousel-caption{
+    color: #CC2D2D;
+}
 .content-img img{
     width: 100%;
     height: 100%;
