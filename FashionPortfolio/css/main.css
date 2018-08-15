@@ -33,26 +33,22 @@ src: local('Typewriter_Condensed Bold'), url('../fonts/typewcond_bold.woff') for
 }
 
 html {
-    color: #222;
     font-size: 1em;
     line-height: 1.4;
-    margin: 0 auto;
-
+    
 }
 
 html, body{
-    height: 100%;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-
-}
-
-body{
+    margin: 0 auto;
+    color: white;
     background-color: black;
     font-family: 'Typewriter_Condensed_Demi';
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -126,9 +122,75 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*#aboutus{
+    position: absolute;
+}*/
+.about-container{
+    width: 100%;
+    font-size: 14px;
+    padding: 10px 0;
+}
+.aboutus-img img{
+    width: 100%;
+}
+#aboutus-content {
+    background-color: #CC2D2D;
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10%;
+    width: 100%;
+}
+
+#aboutus-content p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+button:focus {
+    outline: none;
+}
 
 .container-fluid {
     max-height:100%;
+}
+
+.carousel-item {
+    height: 550px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    color: #CC2D2D;
+}
+
+/*.content-img img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}*/
+
+footer {
+    height:6%;
+    background-color:black;
+    color: white;
+    text-align: center;
+    border-top: 1px white solid;
+    margin-top: 1%;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    padding: 0.5%;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
 }
 
 nav {
@@ -150,63 +212,9 @@ nav {
     color: white !important;
 }
 
-button:focus {
-    outline: none;
-}
-
-.carousel-item {
-    height: 550px;
-}
-
-.carousel-item img {
-    width: 100%;
+.wrapper {
     height: auto;
 }
-
-.carousel-caption {
-    color: #CC2D2D;
-}
-
-.content-img img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-}
-
-.wrapper {
-    background-color: black;
-    height: 100vh;
-}
-
-#aboutus-content {
-    background-color: #CC2D2D;
-    color: whitesmoke;
-    text-align: center;
-    padding-top: 10%;
-    width: 100%;
-}
-
-#aboutus-content p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-h3 {
-    text-align: center;
-    color: white;
-    padding: 1.4%;
-}
-
-footer {
-    height:6%;
-    background-color:#696969;
-    color: white;
-}
-
-
 
 /* ==========================================================================
    Helper classes
