@@ -182,6 +182,32 @@ button:focus {
     color: #CC2D2D;
 }
 
+.collection-img{
+    width: 100%;
+    height: 90%;
+    /*height: 50% !important;*/
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu{
+    background-color:black;
+}
+
+.dropdown-menu a:hover {
+    background-color: transparent;
+}
+
+.dropdown-item{
+    color: white !important;
+
+}
+.dropdown-item:hover {
+    text-decoration: underline;
+}
+
 /*.content-img img {
     width: 100%;
     height: 100%;
@@ -209,9 +235,9 @@ h3 {
 }
 
 nav {
-    background-color: black;
+
     border-bottom: 2px solid black;
-    color: white;
+   
 }
 
 .navbar .navbar-toggler-icon {
@@ -224,6 +250,9 @@ nav {
 
 .nav-item {
     text-transform: uppercase;
+    
+}
+.nav-link{
     color: white !important;
 }
 
@@ -238,18 +267,12 @@ nav {
 
 }
 
-.collection-img{
-    width: 100%;
-    height: 90%;
-    /*height: 50% !important;*/
-}
-
 ::-webkit-scrollbar {
     width: 12px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-    background: red; 
+    background: white; 
 }
 
 .wrapper {
