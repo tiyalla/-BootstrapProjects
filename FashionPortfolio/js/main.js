@@ -6,10 +6,14 @@
     
     }else if (viewportWidth < 769 && (!$("#aboutus-content").hasClass("mt-3"))){
     	$("#aboutus-content").addClass("mt-3");
-    	console.log( "readyyyy!" );
     		}
 	});
 $( document ).ready(function() {
     console.log( "ready!" );
-    $(window).trigger('resize');
+    $(window).on("load", function() {
+    $(".loader").fadeOut(3000);
 });
+    $(window).trigger('resize');
+
+});
+
