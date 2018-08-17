@@ -9,26 +9,46 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@font-face {
+font-family: 'Typewriter_Condensed_Demi';
+font-style: normal;
+font-weight: normal;
+src: local('Typewriter_Condensed_Demi'), url('../fonts/typewcond_demi.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Typewriter_Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Typewriter_Condensed'), url('../fonts/typewcond_regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Typewriter_Condensed Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Typewriter_Condensed Bold'), url('../fonts/typewcond_bold.woff') format('woff');
+}
 
 html {
-    color: #222;
     font-size: 1em;
     line-height: 1.4;
-    margin: 0 auto;
-
+    
 }
 
 html, body{
-    height: 100%;
     top: 0;
     left: 0;
-    min-height: 100%; 
-    min-width: 100%;
+    height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    background-color: black;
+    font-family: 'Typewriter_Condensed_Demi';
 }
 
-body{
-    background-color: black;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -69,14 +89,6 @@ hr {
  * https://github.com/h5bp/html5-boilerplate/issues/440
  */
 
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
 
 /*
  * Remove default fieldset styles.
@@ -110,58 +122,172 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-nav{
-    background-color: white;
-    border-bottom: 2px solid black;
+/*#aboutus{
+    position: absolute;
+}*/
+.about-container{
+ /*   width: 80%;
+    font-size: 14px;
+    padding: 10px 0;
+*/
+}
+.aboutus-img img{
+    width: 100%;
+    height: 50% !important;
 }
 
-.navbar .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+#aboutus-content {
+    /*background-color: #CC2D2D;*/
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 10%;
 }
-button:focus{
+
+#aboutus-content p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+button:focus {
     outline: none;
 }
-.navbar-nav> a:hover{
-    background-color: whitesmoke;
-}
-.navList li a{
-    padding: 8px;
-    font-size: 13px;
-    font-weight: bold;
+
+.col img{
+    width: 100%;
+    height: 100%;
 }
 
+.col p{
+    text-align: center;
+}
 
-.content-img img{
+.col a{
+    color: white;
+}
+
+.container-fluid {
+    max-height:100%;
+}
+
+.carousel-item {
+    height: 550px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    color: #CC2D2D;
+}
+
+.collection-img{
+    width: 100%;
+    height: 90%;
+    /*height: 50% !important;*/
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu{
+    background-color:black;
+}
+
+.dropdown-menu a:hover {
+    background-color: transparent;
+}
+
+.dropdown-item{
+    color: white !important;
+
+}
+.dropdown-item:hover {
+    text-decoration: underline;
+}
+
+/*.content-img img {
     width: 100%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; 
-}
+}*/
 
-.wrapper{
-    background-color: white;
-    height: 100vh;
-
-}
-
-a{
-    color: black;
-}
-a:hover{
-    color: lightgray;
-}
-
-h3{
+footer {
+    height:6%;
+    background-color:black;
+    color: white;
     text-align: center;
-    padding: 1.4%;
+    border-top: 1px white solid;
+    margin-top: 1%;
 }
 
+h3, h5 {
+    text-align: center;
+    color: white;
+    padding: 0.5%;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+}
+.logo{
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: -1%;
+    font-size: 30px;
+    text-align: center;
+}
+.logo a{
+    color: white;
+}
 
+nav {
 
+    border-bottom: 2px solid black;
+   
+}
 
+.navbar .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
+}
+
+.navbar-nav> li:hover {
+    text-decoration: underline;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    
+}
+.nav-link{
+    color: white !important;
+}
+
+.testimonial-group > .row {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.testimonial-group > .row > .col-sm-3 {
+  display: inline-block;
+  float: none;
+
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: white; 
+}
+
+.wrapper {
+    height: auto;
+}
 
 /* ==========================================================================
    Helper classes
@@ -250,11 +376,9 @@ h3{
    ========================================================================== */
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 769px) {
     /* Style adjustments for viewports that meet the condition */
-    .wrapper{
-        height: auto;
-    }
+
 }
 
 @media print,
