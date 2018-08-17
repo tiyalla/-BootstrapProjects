@@ -226,12 +226,22 @@ footer {
     margin-top: 1%;
 }
 
-h3 {
+h3, h5 {
     text-align: center;
     color: white;
     padding: 0.5%;
     border-top: 1px white solid;
     border-bottom: 1px white solid;
+}
+.logo{
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: -1%;
+    font-size: 30px;
+    text-align: center;
+}
+.logo a{
+    color: white;
 }
 
 nav {
@@ -244,7 +254,7 @@ nav {
     background-image: url('https://mdbootstrap.com/img/svg/hamburger6.svg?color=000');
 }
 
-.navbar-nav> a:hover {
+.navbar-nav> li:hover {
     text-decoration: underline;
 }
 
