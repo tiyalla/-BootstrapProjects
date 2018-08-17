@@ -187,7 +187,10 @@ button:focus {
     height: 90%;
     /*height: 50% !important;*/
 }
-
+.contact-info{
+    text-align: center;
+    height: 100vh;
+}
 .dropdown:hover>.dropdown-menu {
   display: block;
 }
